@@ -1,0 +1,103 @@
+/* requestForm start  */
+.main{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg,#e62f41,rgb(235, 113, 141));
+}
+
+.req{
+    position: relative;
+    align-items: center;
+    padding: 20px 30px;
+    width: 600px;
+    background: #fff;
+    /* color: #fff; */
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.switch{
+    position: absolute;
+    right: 30px;
+    display: flex;
+    border-bottom: 1px solid #fe0066;
+}
+
+.switch.active{
+    border-bottom: 1px solid #12ff00;
+}
+
+.switch::after{
+    content: '';
+    height: 4px;
+    width: 50%;
+    background: #fe0066;
+    border-radius: 60px 60px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+}
+
+.switch.active::after{
+    left: 50%;
+    width: 50%;
+    background: #12ff00;
+}
+
+.p_req{
+    padding: 5px 12px;
+    background: linear-gradient(45deg,#00d5fc,#046af6);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.h_req{
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.req .outer{
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.outer #form{
+    width: 200%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+
+#page{
+    margin: auto;
+    width: 100%;
+}
+
+.main label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: start;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* request form end  */
